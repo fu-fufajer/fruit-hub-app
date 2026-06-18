@@ -51,7 +51,6 @@ class DetailPage extends StatelessWidget {
         top: false,
         child: Column(
           children: [
-            // Bagian konten yang bisa scroll kalau kepanjangan
             Expanded(
               child: SingleChildScrollView(
                 padding: const EdgeInsets.fromLTRB(24, 24, 24, 16),
@@ -68,8 +67,6 @@ class DetailPage extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 20),
-
-                    // Quantity selector & harga (statis, qty = 1)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -101,8 +98,6 @@ class DetailPage extends StatelessWidget {
                     const SizedBox(height: 24),
                     Divider(color: Colors.grey.shade300),
                     const SizedBox(height: 16),
-
-                    // One Pack Contains
                     Text(
                       "One Pack Contains:",
                       style: TextStyle(
@@ -124,8 +119,6 @@ class DetailPage extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 16),
-
-                    // Deskripsi tambahan
                     Text(
                       "If you are looking for a new fruit salad to eat today, quinoa is the perfect brunch for you. make",
                       style: TextStyle(
@@ -138,8 +131,6 @@ class DetailPage extends StatelessWidget {
                 ),
               ),
             ),
-
-            // Footer fixed: favorite + Add to basket, tinggi tetap 84
             Container(
               height: 84,
               padding: const EdgeInsets.fromLTRB(24, 16, 24, 16),

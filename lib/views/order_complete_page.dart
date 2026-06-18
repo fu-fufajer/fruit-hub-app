@@ -15,7 +15,6 @@ class OrderCompletePage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // Ikon centang dengan lingkaran ganda
               Container(
                 width: 140,
                 height: 140,
@@ -44,8 +43,6 @@ class OrderCompletePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 36),
-
-              // Judul
               const Text(
                 "Congratulations!!!",
                 textAlign: TextAlign.center,
@@ -57,8 +54,6 @@ class OrderCompletePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
-
-              // Deskripsi
               Text(
                 "Your order have been taken and is being attended to",
                 textAlign: TextAlign.center,
@@ -69,8 +64,6 @@ class OrderCompletePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 40),
-
-              // Tombol Track order (statis, tidak ada logic)
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
@@ -90,8 +83,6 @@ class OrderCompletePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
-
-              // Tombol Continue shopping -> balik ke HomePage
               SizedBox(
                 width: double.infinity,
                 child: OutlinedButton(

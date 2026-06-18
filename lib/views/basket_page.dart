@@ -133,8 +133,6 @@ class BasketPage extends StatelessWidget {
                     },
                   ),
           ),
-
-          // Footer total + checkout
           Container(
             padding: const EdgeInsets.fromLTRB(24, 16, 24, 24),
             decoration: BoxDecoration(
