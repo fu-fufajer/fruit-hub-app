@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fruit_hub_app/views/home_page.dart';
 import 'package:fruit_hub_app/widgets/button.dart';
 
 class WelcomePage extends StatelessWidget {
@@ -6,7 +7,6 @@ class WelcomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       body: Column(
         children: [
@@ -33,7 +33,17 @@ class WelcomePage extends StatelessWidget {
                     style: TextStyle(fontWeight: FontWeight.w400, fontSize: 16),
                   ),
                   Spacer(),
-                  CustomButton(textButton: "Let's Continue", onPressed: (){})
+                  CustomButton(
+                    textButton: "Let's Continue",
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => HomePage(),
+                        ),
+                      );
+                    },
+                  ),
                 ],
               ),
             ),
